@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A guided browser lab on VPNs, network segmentation, Zero Trust, and network hardening.">
+  <title>Harborline | Secure Network Access Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="cases.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#workbench">Skip to the workbench</a>
+  <header class="top">
+    <a class="brand" href="#home"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Harborline<small>NETWORK TRAINING</small></span></a>
+    <div class="top-actions">
+      <div class="progress"><span id="progress-label">0 / 25 complete</span><progress id="progress-bar" max="25" value="0" aria-label="Lab progress"></progress></div>
+      <button class="quiet" id="motion" type="button" aria-pressed="false">Pause motion</button>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">BEGINNER NETWORK SECURITY LAB</p>
+        <h1>Secure<br> remote access.</h1>
+        <p>A coworker on café Wi-Fi needs one work app. Follow their request from laptop to VPN gateway, then decide which doors should open.</p>
+        <div class="hero-actions"><button class="primary" type="button" id="resume">Start the lab</button><a href="STUDENT-GUIDE.txt">Student walkthrough</a></div>
+        <p class="meta">25 guided challenges · Allow 65–90 minutes · Work at your own pace</p>
+      </div>
+      <div class="hero-visual" role="img" aria-label="A protected VPN link runs from the remote laptop to the gateway. Beyond that gateway, policy opens the approved work app and keeps other resources restricted.">
+        <span class="hero-label">REMOTE ACCESS · NETWORK MAP</span>
+        <div class="cover-map" aria-hidden="true">
+          <div class="cover-device"><b>REMOTE</b><small>Laptop</small></div>
+          <div class="cover-tunnel"><i></i><i></i><i></i><small>Protected link</small></div>
+          <div class="cover-device gateway"><b>VPN</b><small>Gateway</small></div>
+          <div class="cover-branch"><i></i></div>
+          <div class="cover-destinations"><div class="open"><b>Work app</b><small>Approved</small></div><div><b>Admin console</b><small>Restricted</small></div><div><b>File server</b><small>Restricted</small></div></div>
+        </div>
+        <p class="hero-caption"><span></span> Encryption protects the link. Policy decides what opens.</p>
+      </div>
+    </section>
+
+    <section class="orientation" id="basics" aria-labelledby="basics-title">
+      <h2 id="basics-title">Four words to know</h2>
+      <dl><div><dt>Authentication</dt><dd>Checking who you are. A second factor, such as an approval on a registered phone, adds a check.</dd></div><div><dt>Authorisation</dt><dd>Checking what you’re allowed to open or do after your identity is established.</dd></div><div><dt>Endpoint</dt><dd>A device people use, such as a laptop. A managed device is maintained by the organisation.</dd></div><div><dt>Network zone</dt><dd>A group of systems with similar access needs. Policy controls which connections can cross between zones.</dd></div></dl>
+    </section>
+
+    <section class="workbench" id="workbench" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">GUIDED SIMULATION</p><h2 id="work-title" tabindex="-1">Harborline workbench</h2></div><p>Read the case, make a prediction or choose a change, then run the simulation and explain what happened.</p></div>
+      <div class="workspace">
+        <aside class="chapters" aria-label="Lab progress by chapter">
+          <nav id="chapters" aria-label="Chapters"></nav>
+          <div class="side-links"><a href="#certificate">Completion certificate</a><button type="button" id="reset">Reset progress</button></div>
+        </aside>
+        <div class="workspace-main">
+          <div class="lesson" id="lesson"></div>
+          <nav class="case-nav" id="case-nav" aria-label="Challenges in this chapter"></nav>
+          <article class="challenge" id="challenge"></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate" id="certificate" aria-labelledby="cert-title">
+      <div><p class="eyebrow">COMPLETION CERTIFICATE</p><h2 id="cert-title">Record your training</h2><p id="cert-status">Complete all 25 challenges to unlock your certificate.</p></div>
+      <form id="cert-form" hidden>
+        <label for="learner">Name on the certificate</label>
+        <div><input id="learner" name="learner" maxlength="65" required autocomplete="name"><button class="primary" type="submit">Download PNG</button></div>
+        <p class="meta">The image is generated in this browser.</p>
+      </form>
+    </section>
+  </main>
+  <footer><b>Harborline</b><span>Fictional network · Browser-only simulation · <a href="STUDENT-GUIDE.txt">Student walkthrough</a></span></footer>
+  <noscript><p class="noscript">Enable JavaScript to use the simulation and save progress.</p></noscript>
+</body>
+</html>

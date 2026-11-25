@@ -1,0 +1,98 @@
+HARBORLINE | SECURE NETWORK ACCESS
+Student walkthrough
+=================================
+
+Start here
+----------
+1. Open index.html in your browser, or use the class lab link.
+2. Watch the mint squares travel from the laptop to the VPN gateway.
+   Find the work app and the two restricted destinations on the far side.
+3. Read “Four words to know.” These definitions stay at the top of the page.
+4. Click “Start the lab.” A returning learner can click “Resume the lab.”
+5. Read the short lesson above each group of challenges.
+6. If motion is distracting, click “Pause motion” in the top bar.
+
+You have five chapters with five challenges each. Plan for 65–90 minutes
+including the reflections below. Work at your own pace and use hints freely.
+
+
+Run a request
+-------------
+1. Read the story at the top of the challenge. Find who is requesting access,
+   which device they are using, and which resource they need.
+2. Read “Connection.” A new VPN request must establish its tunnel. An active
+   VPN is an existing tunnel. A local network request uses the office network.
+3. In “Route policy for this requester,” locate the row labelled “Target.”
+   “Listed” means the policy has a route for this requester and destination.
+   Identity, device and context checks can still affect the decision.
+4. Choose “Allow access,” “Deny access,” or “Ask for another check.”
+5. Click “Run the request.” Follow the bright packet from device to gateway
+   or local link, through policy, and toward the resource.
+6. Read the four check tiles. The text describes which checks passed, failed,
+   were pending, or were not reached. Find where the request stopped.
+7. Read the access log and match the recorded decision to your prediction.
+8. If your prediction differed, pick the result you observed and replay.
+9. In the follow-up question, select an explanation and click “Check my reasoning.”
+10. Read the feedback. If you need help, open “Show a hint” and try again.
+11. When the challenge says “Completed,” click “Next challenge.”
+
+
+Test a hardening change
+-----------------------
+1. Read the story and underline the service somebody still needs.
+2. Read “Approved baseline” and “Observed setting.” Describe the difference.
+3. Choose one proposed change and click “Test this change.”
+4. Read each Pass or Fail row. Say why a failed row would matter to a learner
+   acting as a technician.
+5. Try another proposal until all checks pass. You can try all three to compare.
+6. Select a reason and click “Check my reasoning.”
+7. Read the explanation and click “Next challenge” after it completes.
+
+
+What to watch in each chapter
+----------------------------
+VPN tunnel
+  Trace the protected link. Compare a blocked sign-in, a device that fails
+  policy, and an active tunnel with a resource request that is denied.
+  Write down the access log fields that would help the next analyst.
+
+Network zones
+  Compare the visitor’s public web and staff file requests. Then compare
+  ordinary staff and an approved IT workstation requesting administration.
+  Draw four boxes on paper for guest, staff, server and management zones.
+  Label one approved connection and one restricted connection.
+
+Zero Trust checks
+  See how an identity, device or context change affects a request. Compare
+  the two after-hours cases side by side. For a pending request, write down
+  what needs verification before access can be decided.
+
+Network hardening
+  Compare an unused service with something people need for work. Each time,
+  identify one check for security and one check for service availability.
+  Explain how approval and a rollback plan help an administrator.
+
+Final remote shift
+  Each case has a business need and evidence. Write a short hand-off that
+  names the requester and target, records what happened, identifies a
+  recommended change, and states how you would verify it.
+
+
+Your certificate
+----------------
+1. Check that the top bar reads “25 / 25 complete.”
+2. Scroll to “Completion certificate,” or use the link beside the chapters.
+3. Type your name in “Name on the certificate.”
+4. Click “Download PNG.”
+
+If you get stuck
+----------------
+- A follow-up appears after a correct prediction or an all-pass change.
+- A blurry or motionless packet can still be studied through the labelled
+  checks and access log. Motion can be toggled in the top bar.
+- The chapter buttons jump between chapters. Numbered buttons jump between
+  challenges. A tick marks a completed challenge.
+- Progress is stored in this browser. Return through the same link in the
+  same browser. Private browsing and clearing site data can remove progress.
+- If the certificate is locked, “Resume the lab” finds the first unfinished
+  challenge.
